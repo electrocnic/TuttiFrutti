@@ -21,9 +21,9 @@ public class Burb : MonoBehaviour {
         Vector2 currentPosition = GetComponent<Rigidbody2D>().position;
         Vector2 direction = _startPosition - currentPosition;
         direction.Normalize();
-        
+
         GetComponent<Rigidbody2D>().isKinematic = false;
-        GetComponent<Rigidbody2D>().AddForce(direction * 500);
+        GetComponent<Rigidbody2D>().AddForce(direction * 1000);
         
         GetComponent<SpriteRenderer>().color = Color.white;
     }
